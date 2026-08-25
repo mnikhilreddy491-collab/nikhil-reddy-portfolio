@@ -1,7 +1,7 @@
 import type { Project, Milestone, TechCategory } from '../types';
 
 export const PERSONAL_INFO = {
-  name: "Nikhil Reddy",
+  name: "Munnangi Venkata Nikhil Reddy",
   title: "Full-Stack Developer | AI & Data Systems Engineer | Software Engineer",
   email: "mnikhilreddy0308@gmail.com",
   github: "https://github.com/mnikhilreddy491-collab",
