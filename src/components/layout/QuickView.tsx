@@ -67,7 +67,8 @@ export const QuickView: React.FC<QuickViewProps> = ({ isOpen, onClose }) => {
               </div>
               <div className="pt-2">
                 <span className="text-[10px] text-neu-textMuted uppercase block">Education</span>
-                <span className="font-bold text-xs">B.Tech in Computer Science (AI)</span>
+                <span className="font-bold text-xs">B.Tech in Computer Science & AI</span>
+                <span className="text-[10px] text-neu-textMuted block">Narasaraopeta Engineering College (2022 - 2026)</span>
               </div>
             </div>
           </div>

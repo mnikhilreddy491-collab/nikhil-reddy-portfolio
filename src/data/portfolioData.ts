@@ -131,6 +131,15 @@ export const TECH_CATEGORIES: TechCategory[] = [
 
 export const TIMELINE: Milestone[] = [
   {
+    id: "edu1",
+    year: "2022 - 2026",
+    title: "B.Tech in Computer Science & AI",
+    subtitle: "Narasaraopeta Engineering College",
+    description: "Acquired core engineering foundations, data structures, algorithm design principles, and machine learning architectures, building systems projects on cloud and React setups.",
+    tags: ["Computer Science", "Artificial Intelligence", "ML", "Software Engineering"],
+    category: "academic"
+  },
+  {
     id: "m1",
     year: "2025",
     title: "Technical Development & Internships",
