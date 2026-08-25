@@ -1,4 +1,5 @@
 import type { Project, Milestone, TechCategory } from '../types';
+import portraitImg from '../assets/portrait.png';
 
 export const PERSONAL_INFO = {
   name: "Munnangi Venkata Nikhil Reddy",
@@ -7,7 +8,7 @@ export const PERSONAL_INFO = {
   github: "https://github.com/mnikhilreddy491-collab",
   linkedin: "https://in.linkedin.com/in/nikhil-reddy-0945423a7",
   bio: "I am a Computer Science and Artificial Intelligence engineer focused on building complete, production-ready software systems. I enjoy working across the full development lifecycle — from understanding a problem and designing system architecture to implementing, testing, deploying, and improving real products.",
-  portraitUrl: "/portrait.png"
+  portraitUrl: portraitImg
 };
 
 export const PROJECTS: Project[] = [
@@ -19,7 +20,7 @@ export const PROJECTS: Project[] = [
     fullDescription: "CellSight is an advanced MLOps and computer vision system built to automate biological cell analysis. It processes microscopy images using custom CLAHE contrast normalizations and unsharp masking pipelines, segmenting cell boundaries via a PyTorch-implemented U-Net architecture. Instances are separated using distance transforms and Watershed split algorithms, exposing outputs through a FastAPI backend and interactive Streamlit frontend.",
     role: "Lead Systems & ML Developer",
     technologies: ["Python", "PyTorch", "OpenCV", "FastAPI", "Streamlit", "NumPy", "SciPy", "Image Processing"],
-    image: "/portrait.png",
+    image: portraitImg,
     diagram: [
       { id: "load", name: "Microscopy Loader", description: "Stream raw cell imaging datasets and apply random flip augmentations." },
       { id: "preprocess", name: "CLAHE Preprocessing", description: "Apply local contrast enhancement and unsharp masking pipelines." },
@@ -43,7 +44,7 @@ export const PROJECTS: Project[] = [
     fullDescription: "Aegis is a high-performance configuration auditing and compliance evaluation engine. It models cloud infrastructure access rules, resolves hierarchical policy inheritance using the C3 Method Resolution Order (MRO) algorithm, and audits system configurations across cloud providers, Kubernetes, and databases via 25 pluggable compliance scripts.",
     role: "Core Systems Architect",
     technologies: ["Python", "FastAPI", "Docker", "Graphviz", "Cytoscape.js", "YAML Specs", "MRO Linearization"],
-    image: "/portrait.png",
+    image: portraitImg,
     diagram: [
       { id: "parse", name: "Policy Parser", description: "Read hierarchical YAML/JSON access policy configuration groups." },
       { id: "mro", name: "C3 MRO Linearization", description: "Resolve multi-inheritance policy hierarchies using C3 Method Resolution Order." },
@@ -66,7 +67,7 @@ export const PROJECTS: Project[] = [
     fullDescription: "JigFlow-Platform is an enterprise workflow coordinator. It exposes customizable frontend APIs using customized React hooks (`useResourceList`, `useApiAction`) to modularize work orders, features backend log formatting overrides, devcontainer workspace isolation, and automated ESLint CI jobs.",
     role: "Staff Full-Stack Engineer",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL", "ESLint", "Docker", "Devcontainers"],
-    image: "/portrait.png",
+    image: portraitImg,
     diagram: [
       { id: "hooks", name: "Custom API Hooks", description: "Fetch and mutatively update work order resources using useResourceList." },
       { id: "log", name: "Structured Logging", description: "Inject organization and request identifiers via custom JSON formatters." },
@@ -89,7 +90,7 @@ export const PROJECTS: Project[] = [
     fullDescription: "VaultSentry is a secure access gateway and repository scanner. It monitors development directories for credentials leakage, validates session tokens, and executes zero-trust identity evaluations to authorize user permissions.",
     role: "Security Systems Engineer",
     technologies: ["Python", "Redis", "FastAPI", "Auth0 Rules", "JSON Web Tokens (JWT)", "Shell Scripting"],
-    image: "/portrait.png",
+    image: portraitImg,
     diagram: [
       { id: "scan", name: "Regex Scan", description: "Scan source files for credential patterns and private key definitions." },
       { id: "auth", name: "JWT Verification", description: "Intercept connection requests to authenticate token signatures." },
