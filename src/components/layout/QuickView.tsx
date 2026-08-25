@@ -9,15 +9,19 @@ interface QuickViewProps {
 }
 
 export const QuickView: React.FC<QuickViewProps> = ({ isOpen, onClose }) => {
-  if (!isOpen) return null;
-
   // Prevent scroll when modal is active
   React.useEffect(() => {
-    document.body.style.overflow = 'hidden';
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
     return () => {
       document.body.style.overflow = 'unset';
     };
-  }, []);
+  }, [isOpen]);
+
+  if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-neu-bg/90 backdrop-blur-md overflow-y-auto">
