@@ -49,8 +49,8 @@ export const About: React.FC = () => {
                 <ul className="space-y-2 text-sm font-bold text-neu-text">
                   <li className="flex items-center gap-2"><Eye className="w-4 h-4 text-neutral-400" /> AI-Powered Developer Tooling</li>
                   <li className="flex items-center gap-2"><Eye className="w-4 h-4 text-neutral-400" /> Layer-wise Neural Visualizations</li>
-                  <li className="flex items-center gap-2"><Eye className="w-4 h-4 text-neutral-400" /> Telemetry Waterfall Spectrograms</li>
-                  <li className="flex items-center gap-2"><Eye className="w-4 h-4 text-neutral-400" /> High-Performance Render Canvas</li>
+                  <li className="flex items-center gap-2"><Eye className="w-4 h-4 text-neutral-400" /> C3 Policy Inheritance Solvers</li>
+                  <li className="flex items-center gap-2"><Eye className="w-4 h-4 text-neutral-400" /> Structured Logging Formatters</li>
                 </ul>
               </div>
             </div>

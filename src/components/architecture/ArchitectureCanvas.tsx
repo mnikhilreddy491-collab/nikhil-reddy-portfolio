@@ -21,7 +21,7 @@ export const ArchitectureCanvas: React.FC = () => {
       name: 'Frontend Presentation',
       icon: <Monitor className="w-5 h-5" />,
       summary: 'Responsive, highly optimized visual environments. Prioritizes state consistency, semantic layouts, and fluid 60 FPS telemetry canvas layers.',
-      technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Plotly', 'D3.js'],
+      technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Cytoscape.js', 'Plotly.js', 'Streamlit'],
       practices: ['Web Worker offloading', 'OffscreenCanvas rendering', 'Responsive grids', 'ARIA compliance', 'SEO head parameters']
     },
     {
