@@ -49,9 +49,9 @@ export const Hero: React.FC = () => {
     >
 
 
-      {/* Background Bold Editorial Number */}
+      {/* Background Bold Editorial Letters */}
       <div className="absolute top-0 right-10 text-[20vw] font-black text-neu-shadowDark/15 select-none pointer-events-none leading-none z-0">
-        SRB
+        MVNR
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 w-full">
