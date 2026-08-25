@@ -167,19 +167,6 @@ export const Hero: React.FC = () => {
             <div className="absolute bottom-2 left-2 w-4 h-4 border-b border-l border-white/40 pointer-events-none" />
             <div className="absolute bottom-2 right-2 w-4 h-4 border-b border-r border-white/40 pointer-events-none" />
           </motion.div>
-
-          {/* Technical Data Metadata Overlay */}
-          <div className="absolute -bottom-2 -right-4 bg-neu-text text-white text-[10px] font-mono px-3 py-1.5 rounded-md z-20 shadow-md">
-            COORDINATES // 16.10.19.N // 2026
-          </div>
-          
-          {/* Subtle Bounding Box Banners */}
-          <div className="absolute -top-3 right-8 bg-neu-border text-[8px] font-mono px-2 py-0.5 rounded text-neu-textMuted tracking-wider select-none pointer-events-none z-0">
-            BOUNDING_BOX // 320x400
-          </div>
-          <div className="absolute top-1/2 -right-12 -translate-y-1/2 font-mono text-[9px] text-neu-accent tracking-widest uppercase origin-center rotate-90 select-none pointer-events-none hidden sm:block">
-            SYSTEM LAYER // 01
-          </div>
         </div>
       </div>
     </section>
