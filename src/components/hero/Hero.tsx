@@ -125,6 +125,13 @@ export const Hero: React.FC = () => {
 
         {/* Right Side: Portrait Image in Asymmetric Neumorphic Composition */}
         <div className="lg:col-span-5 flex justify-center items-center relative py-6">
+          {/* Underlying Dark Charcoal Offset Plate */}
+          <motion.div 
+            animate={parallaxAccent}
+            transition={{ type: 'tween', ease: 'easeOut', duration: 0.5 }}
+            className="absolute w-[280px] h-[360px] sm:w-[320px] sm:h-[400px] bg-neu-text rounded-[24px] z-0 -rotate-6 shadow-md opacity-90"
+          />
+
           {/* Underlying Offset Neumorphic Plate */}
           <motion.div 
             animate={parallaxFrame}
@@ -136,7 +143,7 @@ export const Hero: React.FC = () => {
           <motion.div 
             animate={parallaxAccent}
             transition={{ type: 'tween', ease: 'easeOut', duration: 0.5 }}
-            className="absolute w-[280px] h-[360px] sm:w-[320px] sm:h-[400px] bg-neu-accent/90 rounded-[24px] z-0 -rotate-3"
+            className="absolute w-[280px] h-[360px] sm:w-[320px] sm:h-[400px] bg-neu-accent rounded-[24px] z-0 -rotate-3"
           />
 
           {/* Portrait Container Frame */}
@@ -153,11 +160,25 @@ export const Hero: React.FC = () => {
             />
             {/* Soft overlay gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent pointer-events-none" />
+            
+            {/* Corner Crop Marks for Editorial Aesthetic */}
+            <div className="absolute top-2 left-2 w-4 h-4 border-t border-l border-white/40 pointer-events-none" />
+            <div className="absolute top-2 right-2 w-4 h-4 border-t border-r border-white/40 pointer-events-none" />
+            <div className="absolute bottom-2 left-2 w-4 h-4 border-b border-l border-white/40 pointer-events-none" />
+            <div className="absolute bottom-2 right-2 w-4 h-4 border-b border-r border-white/40 pointer-events-none" />
           </motion.div>
 
           {/* Technical Data Metadata Overlay */}
           <div className="absolute -bottom-2 -right-4 bg-neu-text text-white text-[10px] font-mono px-3 py-1.5 rounded-md z-20 shadow-md">
             COORDINATES // 16.10.19.N // 2026
+          </div>
+          
+          {/* Subtle Bounding Box Banners */}
+          <div className="absolute -top-3 right-8 bg-neu-border text-[8px] font-mono px-2 py-0.5 rounded text-neu-textMuted tracking-wider select-none pointer-events-none z-0">
+            BOUNDING_BOX // 320x400
+          </div>
+          <div className="absolute top-1/2 -right-12 -translate-y-1/2 font-mono text-[9px] text-neu-accent tracking-widest uppercase origin-center rotate-90 select-none pointer-events-none hidden sm:block">
+            SYSTEM LAYER // 01
           </div>
         </div>
       </div>
