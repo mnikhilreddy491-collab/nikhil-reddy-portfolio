@@ -40,7 +40,7 @@ export const Contact: React.FC = () => {
                 variant="accent"
                 onClick={() => window.location.href = `mailto:${PERSONAL_INFO.email}`}
                 className="text-sm px-6 py-4 flex items-center gap-2 group"
-                ariaLabel="Send an email to Shaik Rameez Basha"
+                ariaLabel="Send an email to Nikhil Reddy"
               >
                 <Mail className="w-4 h-4" />
                 GET IN TOUCH

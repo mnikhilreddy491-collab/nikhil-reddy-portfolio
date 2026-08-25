@@ -28,7 +28,7 @@ export const QuickView: React.FC<QuickViewProps> = ({ isOpen, onClose }) => {
         <div className="sticky top-0 bg-neu-surface border-b border-neu-border/50 px-6 py-4 flex justify-between items-center z-10">
           <div>
             <span className="text-[10px] font-mono text-neu-accent tracking-widest uppercase">RECRUITER QUICK VIEW</span>
-            <h3 className="text-lg font-black text-neu-text tracking-tight uppercase">SHAIK RAMEEZ BASHA — CV</h3>
+            <h3 className="text-lg font-black text-neu-text tracking-tight uppercase">NIKHIL REDDY — CV</h3>
           </div>
           <div className="flex items-center gap-3">
             <a

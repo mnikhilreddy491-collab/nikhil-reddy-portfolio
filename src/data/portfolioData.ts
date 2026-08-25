@@ -1,7 +1,7 @@
 import type { Project, Milestone, TechCategory } from '../types';
 
 export const PERSONAL_INFO = {
-  name: "Shaik Rameez Basha",
+  name: "Nikhil Reddy",
   title: "Full-Stack Developer | AI & Data Enthusiast | Software Engineer",
   email: "mnikhilreddy0308@gmail.com", // Linked to the active user's details requested
   github: "https://github.com/mnikhilreddy491-collab", // Linked to the user's active GitHub ID
