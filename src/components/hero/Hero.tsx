@@ -25,8 +25,6 @@ export const Hero: React.FC = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, [shouldReduceMotion]);
 
-  // Interpolated animation offsets based on mouse position
-  const parallaxBg = shouldReduceMotion ? { x: 0, y: 0 } : { x: mousePosition.x * 20, y: mousePosition.y * 20 };
   const parallaxFrame = shouldReduceMotion ? { x: 0, y: 0 } : { x: mousePosition.x * -15, y: mousePosition.y * -15 };
   const parallaxPortrait = shouldReduceMotion ? { x: 0, y: 0 } : { x: mousePosition.x * -8, y: mousePosition.y * -8 };
   const parallaxAccent = shouldReduceMotion ? { x: 0, y: 0 } : { x: mousePosition.x * 35, y: mousePosition.y * 35 };
@@ -49,17 +47,7 @@ export const Hero: React.FC = () => {
       id="hero" 
       className="relative min-h-[calc(100vh-80px)] flex flex-col justify-center overflow-hidden py-12 md:py-20 bg-neu-bg"
     >
-      {/* Editorial Decorative Background Elements */}
-      <motion.div 
-        animate={parallaxBg}
-        transition={{ type: 'tween', ease: 'easeOut', duration: 0.5 }}
-        className="absolute top-1/4 left-10 w-96 h-96 rounded-full bg-neu-shadowDark/20 blur-3xl pointer-events-none"
-      />
-      <motion.div 
-        animate={parallaxAccent}
-        transition={{ type: 'tween', ease: 'easeOut', duration: 0.5 }}
-        className="absolute bottom-1/4 right-10 w-80 h-80 rounded-full bg-neu-accent/5 blur-3xl pointer-events-none"
-      />
+
 
       {/* Background Bold Editorial Number */}
       <div className="absolute top-0 right-10 text-[20vw] font-black text-neu-shadowDark/15 select-none pointer-events-none leading-none z-0">
@@ -169,7 +157,7 @@ export const Hero: React.FC = () => {
             <img 
               src={PERSONAL_INFO.portraitUrl} 
               alt={PERSONAL_INFO.name} 
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out scale-105 hover:scale-100"
+              className="w-full h-full object-cover transition-all duration-500 ease-in-out hover:scale-102"
               loading="eager"
             />
             {/* Soft overlay gradient */}
