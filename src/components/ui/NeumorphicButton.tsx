@@ -33,9 +33,9 @@ export const NeumorphicButton: React.FC<NeumorphicButtonProps> = ({
     variantStyles = 'bg-neu-text text-white shadow-md hover:bg-neutral-800 hover:-translate-y-0.5';
     tapAnimation = { scale: 0.97 };
   } else if (variant === 'accent') {
-    // Crimson button
-    variantStyles = 'bg-neu-accent text-white shadow-neu-accent-flat hover:bg-red-700 hover:-translate-y-0.5';
-    tapAnimation = { scale: 0.97, boxShadow: 'inset 4px 4px 8px #9b1c1c, inset -4px -4px 8px #ef4444' };
+    // Crimson button (flat, solid, no glowing red shadows)
+    variantStyles = 'bg-neu-accent text-white shadow-md hover:bg-red-700 hover:shadow-lg hover:-translate-y-0.5';
+    tapAnimation = { scale: 0.97 };
   }
 
   return (

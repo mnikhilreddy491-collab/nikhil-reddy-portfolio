@@ -26,8 +26,6 @@ export default {
         'neu-flat-sm-hover': '4px 4px 8px #d1d1cf, -4px -4px 8px #ffffff',
         'neu-pressed': 'inset 6px 6px 12px #e0e0de, inset -6px -6px 12px #ffffff',
         'neu-pressed-sm': 'inset 3px 3px 6px #e0e0de, inset -3px -3px 6px #ffffff',
-        'neu-accent-flat': '6px 6px 12px #b72727, -6px -6px 12px #ef3737', // red neumorphic flat
-        'neu-accent-pressed': 'inset 6px 6px 12px #b72727, inset -6px -6px 12px #ef3737',
       },
       fontFamily: {
         sans: ['Geist', 'Inter', 'system-ui', 'sans-serif'],

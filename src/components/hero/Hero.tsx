@@ -91,15 +91,6 @@ export const Hero: React.FC = () => {
               EXPLORE MY WORK
               <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </NeumorphicButton>
-
-            <a 
-              href="/resume.pdf" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center font-semibold rounded-xl px-6 py-4 text-sm bg-neu-surface text-neu-text border border-neu-border/40 shadow-neu-flat hover:shadow-neu-flat-hover hover:text-neu-accent transition-all duration-200"
-            >
-              VIEW RESUME
-            </a>
           </div>
 
           {/* Social Links */}

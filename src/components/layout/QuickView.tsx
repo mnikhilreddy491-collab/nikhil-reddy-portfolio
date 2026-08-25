@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Download, Mail } from 'lucide-react';
+import { X, Mail } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '../ui/SocialIcons';
 import { PERSONAL_INFO, TECH_CATEGORIES, PROJECTS, TIMELINE } from '../../data/portfolioData';
 
@@ -31,15 +31,6 @@ export const QuickView: React.FC<QuickViewProps> = ({ isOpen, onClose }) => {
             <h3 className="text-lg font-black text-neu-text tracking-tight uppercase">MUNNANGI VENKATA NIKHIL REDDY — CV</h3>
           </div>
           <div className="flex items-center gap-3">
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 bg-neu-text text-white text-xs font-bold rounded-xl hover:bg-neutral-800 transition-colors"
-            >
-              <Download className="w-3.5 h-3.5" />
-              PDF RESUME
-            </a>
             <button
               onClick={onClose}
               className="p-2 bg-neu-bg hover:bg-neutral-200 border border-neu-border/20 rounded-xl text-neu-text transition-colors outline-none"

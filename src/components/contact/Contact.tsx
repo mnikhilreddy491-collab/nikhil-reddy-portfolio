@@ -19,9 +19,6 @@ export const Contact: React.FC = () => {
         </div>
 
         <NeumorphicCard className="p-8 md:p-12 border border-neu-border/30 relative overflow-hidden bg-neu-surface">
-          {/* Editorial Crimson Accent corner */}
-          <div className="absolute top-0 right-0 w-24 h-24 bg-neu-accent/5 rounded-bl-[100%] pointer-events-none" />
-
           <div className="max-w-3xl space-y-8">
             <span className="text-xs font-mono text-neu-accent tracking-widest uppercase block mb-1">COLLABORATION & PROJECTS</span>
             

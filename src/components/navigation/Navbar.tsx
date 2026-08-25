@@ -121,15 +121,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onQuickViewOpen }) => {
               <FileText className="w-3.5 h-3.5 mr-1.5 text-neu-accent" />
               QUICK VIEW
             </NeumorphicButton>
-            
-            <a 
-              href="/resume.pdf" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center text-xs font-bold py-2.5 px-4 bg-neu-text text-white rounded-xl hover:bg-neutral-800 transition-colors"
-            >
-              RESUME
-            </a>
           </div>
         </nav>
 
@@ -186,16 +177,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onQuickViewOpen }) => {
                   <FileText className="w-4 h-4 mr-2 text-neu-accent" />
                   QUICK VIEW
                 </NeumorphicButton>
-
-                <a
-                  href="/resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full text-center font-bold py-3 bg-neu-text text-white rounded-xl hover:bg-neutral-800 transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  RESUME
-                </a>
               </div>
             </div>
           </motion.div>
